@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web Form</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" target="_self">
+        <h1>Login</h1><br>
+        <fieldset>
+            <legend>Name Information:</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" tabindex="0" class="first-name-info" required id="first-name" name="first-name" placeholder="Type your first name here"><br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" tabindex="1" class="last-name" required id="last-name" name="last-name" placeholder="Type your last name here"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information:</legend>
+            <label for="email">Email:</label>
+            <input type="email" tabindex="3" class="email" required name="email" id="email" placeholder="my.email@mail.com"><br>
+            <label for="phone">Phone:</label>
+            <input type="text" tabindex="4" class="phone" required id="phone" name="phone" placeholder="phone number"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <label for="gender">Select your gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests:</legend>
+            <label for="interests">Select your interests:</label><br>
+            <input type="checkbox" id="pop" name="interest" value="Pop">
+            <label for="pop">Pop</label><br>
+            <input type="checkbox" id="rock" name="interest" value="Rock">
+            <label for="rock">Rock</label><br>
+            <input type="checkbox" id="country" name="interest" value="Country">
+            <label for="country">Country</label><br>
+            <input type="checkbox" id="reggae" name="interest" value="Reggae">
+            <label for="reggae">Reggae</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Date Information:</legend>
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" required name="birthdate" ><br>
+            <label for="today">Today's Date:</label>
+            <input type="date" required name="today" id="today">
+        </fieldset>
+
+        <fieldset>
+            <legend>Comments:</legend>
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Add any additional information here"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
